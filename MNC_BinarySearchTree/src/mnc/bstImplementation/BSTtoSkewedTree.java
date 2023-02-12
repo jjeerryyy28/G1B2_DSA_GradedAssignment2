@@ -31,18 +31,4 @@ public class BSTtoSkewedTree {
             System.out.print(node + " ");
         }
     }
-
-    public static void main(String[] args) {
-        Scanner scan = new Scanner(System.in);
-        System.out.println("Enter the number of nodes in the BST:");
-        int n = scan.nextInt();
-
-        System.out.println("Enter the nodes in the BST:");
-        Node root = new Node(scan.nextInt());
-        for (int i = 1; i < n; i++) {
-            root = insertNode(root, scan.nextInt());
-        }
-
-        displayNodesInAscendingOrder(root);
-    }
 }
